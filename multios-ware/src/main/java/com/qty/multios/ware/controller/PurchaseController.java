@@ -33,9 +33,7 @@ public class PurchaseController {
     ///ware/purchase/done
     @PostMapping("/done")
     public R finish(@RequestBody PurchaseDoneVo doneVo){
-
         purchaseService.done(doneVo);
-
         return R.ok();
     }
 
